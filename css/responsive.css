@@ -5,8 +5,11 @@
     .logo_img {
         width: 90%;
     }
+    .picture__right {
+        padding: 1em 0 1em;
+    }
     .right__img {
-        width: 88%;
+        margin-right: -2em;
     }
 }
 
@@ -33,6 +36,10 @@
     .picture__right {
         padding: 0;
     }
+    .right__img {
+        margin-right: 0em;
+        width: 88%;
+    }
     .contacts {
         padding: 3em 3em 1em;
     }
@@ -52,6 +59,11 @@
     .content__left-title {
         font-size: 32px;
     }
+    .logo {
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
     .logo_img {
         width: 60%;
     }
@@ -70,6 +82,7 @@
     .right__img {
         width: 75%;
         display: block;
+        margin-right: -2em;
     }
 }
 
