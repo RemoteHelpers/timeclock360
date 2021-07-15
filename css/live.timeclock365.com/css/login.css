@@ -1,0 +1,359 @@
+/* Reset */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+form {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+form label {
+    border: none;
+    background: none;
+    text-shadow: none;
+    padding: 0;
+}
+
+form input {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    text-transform: none;
+}
+
+p {
+    margin: 0;
+}
+/* Reset end */
+
+/* Fonts */
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI.woff2') format('woff2'),
+    url('../fonts/SegoeUI.woff') format('woff'),
+    url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Fonts end */
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-SemiBold.eot');
+    src: url('../fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-SemiBold.woff2') format('woff2'),
+    url('../fonts/SegoeUI-SemiBold.woff') format('woff'),
+    url('../fonts/SegoeUI-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-Light.eot');
+    src: url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-Light.woff2') format('woff2'),
+    url('../fonts/SegoeUI-Light.woff') format('woff'),
+    url('../fonts/SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Fonts end */
+
+.login-page-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .41);
+    text-align: center;
+}
+
+.login-page-wrap_centered {
+    align-items: center;
+}
+
+.login-page {
+    width: 500px;
+    max-width: 100%;
+    font-family: 'Segoe UI';
+}
+
+.login-page__link {
+    display: inline;
+    vertical-align: top;
+    border-bottom: 1px solid transparent;
+    text-decoration: none !important;
+    line-height: normal;
+    transition: border-bottom-color .3s;
+}
+
+.login-page__text {
+    color: #000000;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.login-page__link_gray {
+    border-bottom-color: #999999;
+    color: #999999 !important;
+}
+
+.login-page__link_white {
+    border-bottom-color: #ffffff;
+    color: #ffffff !important;
+}
+
+.login-page__link:hover {
+    border-bottom-color: transparent;
+    text-align: left;
+}
+
+.login-page__content {
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.login-page__logo {
+    display: block;
+    width: 150px;
+    margin: 0 auto 40px auto;
+}
+
+.login-page__form {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.login-page__form-label {
+    display: block;
+}
+
+.login-page__form-label:not(:first-of-type) {
+    margin-top: 15px;
+}
+
+.login-page__input {
+    width: 100% !important;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #7f7f7f;
+    font-size: 16px;
+    color: #515151;
+}
+
+.login-page__checkbox-wrap {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.login-page__checkbox-wrap .checker {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    margin-right: 7px;
+    float: none;
+}
+
+.login-page__checkbox-wrap input[type="checkbox"] {
+    width: 30px !important;
+    height: 20px !important;
+}
+
+.login-page__checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.login-page__checkbox-wrap span {
+    position: relative;
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #7f7f7f;
+    background: none !important;
+    float: none !important;
+}
+
+.login-page__checkbox-wrap span:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MDYuODM0IDQwNi44MzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwNi44MzQgNDA2LjgzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+PHBvbHlnb24gcG9pbnRzPSIzODUuNjIxLDYyLjUwNyAxNDYuMjI1LDMwMS45MDEgMjEuMjEzLDE3Ni44OTEgMCwxOTguMTA0IDE0Ni4yMjUsMzQ0LjMyNyA0MDYuODM0LDgzLjcyICIgZmlsbD0iIzdmN2Y3ZiIvPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
+    transform: scale(0);
+    position: absolute;
+    bottom: 1.5px;
+    left: 2px;
+    transition: transform .3s;
+}
+
+.login-page__checkbox-wrap span.checked:before {
+    transform: scale(1);
+}
+
+.login-page__submit {
+    display: block;
+    width: 225px !important;
+    max-width: 100%;
+    height: 40px;
+    margin: 15px auto 0 auto;
+    padding: 0 15px;
+    background-color: #1c9de0;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+
+.login-page__submit:hover {
+    background-color: #1c6ce0;
+}
+
+.login-page__form-actions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 30px auto 0 auto;
+}
+
+.login-page__form-actions_single {
+    justify-content: center;
+}
+
+.login-page__reset-password {
+    font-size: 14px;
+}
+
+.login-page__separator {
+    margin: 15px auto 15px auto;
+    text-align: center;
+}
+
+.login-page__separator-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-page__separator:before,
+.login-page__separator:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.login-page__microsoft-login {
+     text-align: center;
+ }
+
+.login-page__microsoft-login-btn {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login-page__marketplaces {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.login-page__marketplaces-title,
+.login-page__marketplaces-info {
+    color: #ffffff;
+}
+
+.login-page__marketplaces-title {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.login-page__marketplaces-info {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.login-page__marketplaces-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login-page__marketplaces-btn {
+    display: block;
+    text-decoration: none;
+}
+
+.login-page__marketplaces-btn:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.login-page__marketplaces-btn-img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.login-page__register {
+    margin-top: 30px;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-page__footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.login-page__footer-col {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.login-page__footer-col:not(:last-child) {
+    margin-right: 20px;
+}
+
+.login-page__warning {
+    margin-bottom: 15px;
+    color: #ff0000;
+    text-align: left;
+    font-weight: normal;
+}

@@ -1,0 +1,104 @@
+.base-modal {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.base-modal__close-btn {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #42CDF3;
+    right: 15px;
+    top: 15px;
+    -webkit-appearance: none;
+    z-index: 1;
+}
+.base-modal__close-icon {
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.base-modal__logo {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.base-modal__logo-holder {
+    position: relative;
+    padding-top: 68%;
+}
+.base-modal__logo-img {
+    position: absolute;
+    width: 100%;
+    vertical-align: top;
+    top: 0;
+    left: 0;
+}
+
+.base-modal__text {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+.base-modal__action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.base-modal__button {
+    min-width: 90px;
+    margin: 0 20px;
+    padding: .25em 1em;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition:
+        background-color .3s,
+        color .3s,
+        box-shadow .3s;
+}
+.base-modal__button:disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+.base-modal__button_dark {
+    background-color: #E2E2E2;
+}
+.base-modal__button_blue,
+.base-modal__button_green,
+.base-modal__button_red {
+    color: #FFFFFF;
+}
+.base-modal__button_blue {
+    background-color: #42CDF3;
+}
+.base-modal__button_green {
+    background-color: #5CB85C;
+}
+.base-modal__button_red {
+    background-color: #D9534F;
+}
+.base-modal__button_dark:hover {
+    background-color: #BBBBBB;
+}
+.base-modal__button_blue:hover {
+    background-color: rgba(66, 205, 243, .7);
+}
+.base-modal__button_green:hover {
+    background-color: #449D44;
+}
+.base-modal__button_red:hover {
+    background-color: #C9302C;
+}

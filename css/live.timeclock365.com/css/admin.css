@@ -1,0 +1,383 @@
+body {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.logo img {
+    max-width: 120px !important;
+    max-height: 55px !important;
+}
+
+.logo_lg {
+    text-align: left !important;
+}
+
+.logo_lg img {
+    max-width: 180px !important;
+}
+
+.table .date-table {
+    background-color: transparent !important;
+}
+
+.table .date-table {
+    margin-bottom: 0;
+}
+
+.table .date-table>tbody>tr>td, .table .date-table>tbody>tr>th, .table .date-table>tfoot>tr>td, .table .date-table>tfoot>tr>th, .table .date-table>thead>tr>td, .table .date-table>thead>tr>th {
+    padding: 0;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: none;
+}
+
+.table thead > tr > th.vertical-align, .table tbody > tr > td.vertical-align {
+    vertical-align: middle;
+}
+
+section.sidebar {
+    padding-top: 8px;
+    font-size: 17px;
+}
+
+.sidebar a {
+    color: #B1B5B9 !important;
+    font-size: 16px !important;
+    border: none !important;
+    max-width: calc(100% - 12px);
+    border-radius: 0 6px 6px 0;
+}
+
+.treeview-menu > li.active > a {
+    color: #FFFFFF !important;
+}
+
+.sidebar i.fa {
+    margin-right: 20px;
+}
+
+.table-hover tbody tr:not(.not-hover):hover td, .table-hover tbody tr:not(.not-hover):hover th {
+    background-color: #eeeeea;
+}
+
+.na-text {
+    font-style: italic;
+    color: #777;
+    text-transform: capitalize;
+}
+
+.sidebar-menu>li:hover>a,
+.sidebar-menu>li.active>a {
+    color: #FFFFFF !important;
+    background: #040405 !important;
+}
+
+.sidebar-menu>li:hover::after,
+.sidebar-menu>li.active::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    background-color: #FFFFFF;
+    opacity: .5;
+    top: 0;
+    right: 0;
+}
+
+.sidebar-menu>li>.treeview-menu {
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sidebar-menu>li>.treeview-menu a {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.web-punch {
+    color: #59afe1;
+}
+
+.terminal-punch {
+    color: #589322;
+}
+
+.access-control-punch {
+    color: #723193;
+}
+
+.auto-punch {
+    color: orange;
+}
+
+.contract-punch {
+    color: #8800ff;
+}
+
+section.content-header ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;
+    margin: 0;
+}
+
+section.content-header a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
+
+.fa-spin-custom, .glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+
+.loader {
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/* collapsible box */
+.accordion-box {
+    margin-bottom: 0 !important;
+}
+
+.accordion-box .box-body {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.accordion-box .box-body_rtl {
+    direction: rtl;
+    max-width: 59%;
+}
+
+.box-accordion-title {
+    padding-left: 20px;
+    font-weight: bold;
+    color:rgba(2, 164, 204, 1);
+}
+
+.accordion-box .control-label,
+.accordion-box .select2-choice,
+.accordion-box .sonata-medium-date,
+.accordion-box .input-group-addon,
+.accordion-box .sonata-ba-field,
+.accordion-box .btn,
+.accordion-box .box-header,
+.accordion-box .box-header .events-counter,
+.accordion-select-drop,
+.accordion-select-drop .select2-input,
+.accordion-datepicker,
+.accordion-datepicker .table-condensed .btn:hover,
+.wrap_edit_tasks_block {
+    color: #747474;
+}
+
+.accordion-datepicker .day.new {
+    color: #ccc;
+}
+
+.accordion-box .form-control {
+    color: #5c5c5c;
+}
+
+.accordion-box .control-label,
+.accordion-box .sonata-ba-field,
+.control-label__text {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.accordion-box .box-title {
+    font-weight: 500;
+}
+
+.uppercase-all-letters {
+    text-transform: uppercase;
+}
+
+.black-color-text {
+    color: #000;
+}
+.accordion-box .box-header {
+    padding-top: 25px;
+    border-bottom-color: #d2d2d2 !important;
+    display: flex;
+}
+
+.accordion-box .box-header:hover {
+    cursor: pointer;
+}
+
+.accordion-box .box-header .box-tools-transform {
+    transform: rotate(180deg);
+}
+
+.accordion-box .box-header > .box-tools {
+    top: 18px;
+}
+
+.accordion-box .box-header > .box-tools:before {
+    content: '';
+}
+
+.accordion-box .sonata-ba-field .form-control {
+    border: 1px solid #a8acab;
+}
+
+.accordion-box .btn.sonata-collection-add {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.btn.btn-link.sonata-collection-delete {
+    margin-left: 10px;
+}
+
+.accordion-box .btn.sonata-collection-add .fa-stack {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-box .btn.sonata-collection-add .fa-stack .fa-stack-1x {
+    font-size: .7em;
+    top: 1px;
+}
+
+.accordion-box .box-header .box-title {
+    width: 480px;
+    display: inline-block;
+}
+
+.task-wrap, .project-items--wrap {
+    display: flex;
+}
+
+.task-wrap span:nth-child(1), .project-items--wrap span:nth-child(1) {
+    width: 160px;
+}
+
+.accordion-box .box-header span:nth-child(3n) {
+    margin-right: 10px;
+}
+
+.wrap_edit_tasks_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.wrap_edit_tasks_block h1 {
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.42857143;
+    margin-top: 0;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap_edit_tasks_block h1 ~ a {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.wrap_edit_tasks_block .table {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+}
+
+.wrap_edit_tasks_block .table td {
+    border: none;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.wrap_edit_tasks_block .table thead {
+    font-weight: 700;
+}
+
+.fake-margin {
+    height: 74px;
+}
+
+.contract-admin-absences-with-file-mandatory-select-class {
+    width: 60%;
+}
+.block_punch {
+    max-width: 240px;
+}
+
+.box.box-primary,
+.box.box-info {
+    border-top: 0;
+}
+
+.user-list-groups {
+    display: inline-block;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.search-result-show {
+    display: block;
+}
+
+.search-result-hide {
+    display: none;
+}
+
+.navbar-free-trial {
+    flex:1 1 auto;
+    line-height: 50px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #f7b924;
+    color: white;
+}
+
+div.navbar-free-trial > a {
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-flex {
+    display: flex;
+}
+
+.w30 {
+    width: 30px;
+}
+
+.content-wrapper {
+    background-color: #E9EDF2;
+}
+
+.main-sidebar {
+    background-color: #242D31 !important;
+}
+
+.sidebar-form {
+    margin: 0 12px 8px 15px !important;
+}
