@@ -5,8 +5,11 @@
     .logo_img {
         width: 90%;
     }
+    .picture__right {
+        padding: 1em 0 1em;
+    }
     .right__img {
-        width: 88%;
+        margin-right: -2em;
     }
 }
 
@@ -30,8 +33,15 @@
         font-size: 16px;
         line-height: unset;
     }
+    .content__left-list {
+        padding: 1em 0 0;
+    }
     .picture__right {
         padding: 0;
+    }
+    .right__img {
+        margin-right: 0em;
+        width: 88%;
     }
     .contacts {
         padding: 3em 3em 1em;
@@ -52,6 +62,11 @@
     .content__left-title {
         font-size: 32px;
     }
+    .logo {
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
     .logo_img {
         width: 60%;
     }
@@ -70,6 +85,7 @@
     .right__img {
         width: 75%;
         display: block;
+        margin-right: -2em;
     }
 }
 
@@ -84,7 +100,7 @@
         width: 90%;
     }
     .main {
-        background-position-x: center;
+        background-position-x: -65em;
         height: unset;
     }
     .main__inner {
@@ -101,6 +117,9 @@
     }
     .content__left {
         padding-top: 2em;
+    }
+    .content__left-list {
+        padding: 2em 0 0;
     }
     .content__left-title {
         font-size: 44px;
