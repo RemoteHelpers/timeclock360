@@ -33,6 +33,9 @@
         font-size: 16px;
         line-height: unset;
     }
+    .content__left-list {
+        padding: 1em 0 0;
+    }
     .picture__right {
         padding: 0;
     }
@@ -97,7 +100,7 @@
         width: 90%;
     }
     .main {
-        background-position-x: center;
+        background-position-x: -65em;
         height: unset;
     }
     .main__inner {
@@ -114,6 +117,9 @@
     }
     .content__left {
         padding-top: 2em;
+    }
+    .content__left-list {
+        padding: 2em 0 0;
     }
     .content__left-title {
         font-size: 44px;
