@@ -178,7 +178,9 @@ iframe {
 }
 
 .contacts {
-    padding: 8em 2em 0;
+    /* padding: 8em 2em 0; */
+    position: absolute;
+    bottom: 3em;
     color: #fff;
     font-size: 15px;
 }
