@@ -1,0 +1,229 @@
+@media(max-width: 1440px) {
+    .user__card {
+        width: 50%;
+    }
+    .user__card-button {
+        width: 7em;
+    }
+    .task__wrapper {
+        width: 40%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .user__card {
+        width: 60%;
+        height: 21em;
+    }
+    .task__wrapper {
+        height: 21em;
+    }
+}
+
+@media(max-width: 1140px) {
+    .user__card {
+        width: 55%;
+    }
+    .user__card-status {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navbar__logo {
+        /* width: 80%; */
+    }
+    .user__card {
+        padding: 1em 1em 2em;
+    }
+    .user__card-timer {
+        font-size: 22px;
+    }
+    .user__card-button {
+        font-size: 16px;
+    }
+    .task__wrapper {
+        /* width: 30%; */
+        margin-left: 1em;
+        padding: 1em 1em 2em;
+    }
+    .navbar__link {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 900px) {
+    .content__wrapper {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+    .user__card {
+        width: 100%;
+    }
+    .task__wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .main {
+        grid-template-areas: 'header header' 'content content';
+    }
+    .navbar {
+        grid-area: header;
+        background: #fff;
+        padding-bottom: 0;
+    }
+    .logo {
+        margin: 0;
+    }
+    .logo__text {
+        color: #fff;
+    }
+    .navbar__logo {
+        display: none;
+    }
+    .navbar__top {
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        left: 0;
+        padding: 1em;
+        top: 0;
+        background: #FF7802;
+    }
+    .navbar__tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 4em;
+    }
+    .navbar__tab {
+        flex-direction: column;
+        padding-bottom: 1em;
+        transition: all .2s;
+        border-bottom: 2px solid#fff;
+    }
+    .navbar__tab:active {
+        border-bottom: 2px solid #FF7802;
+    }
+    .navbar__tab:active .navbar__link {
+        color: #FF7802;
+    }
+    .navbar__tab:active .navbar__icon path {
+        fill: #FF7802;
+    }
+    .navbar__icon {
+        padding-right: 0;
+        padding-bottom: .5em;
+    }
+    .time__properties {
+        display: none;
+    }
+    .user__card-id {
+        display: none;
+    }
+    .card__bar-ip {
+        display: none;
+    }
+    .card__bar-header {
+        display: none;
+    }
+    .user__card {
+        flex-direction: column;
+        height: auto;
+    }
+    .card__bar-icon {
+        width: 5em;
+    }
+    .card__bar-text {
+        font-size: 16px;
+    }
+    .card__bar-items {
+        justify-content: space-around;
+    }
+    .card__bar-item {
+        width: 25%;
+        padding: 3em 0px;
+        border: 2px solid #E0E0E0;
+        box-shadow: none;
+        border-radius: 10px;
+        transition: all .2s;
+    }
+    .card__bar-item:active {
+        border: 2px solid #FF7802;
+    }
+    .card__bar-item:active .card__bar-text {
+        color: #FF7802;
+    }
+    .card__bar-item:active .card__bar-icon path {
+        fill: #FF7802;
+    }
+    .user__card-timer {
+        border: none;
+        font-weight: normal;
+        font-size: 42px;
+        line-height: 50px;
+        height: 3em;
+    }
+    .user__card-button {
+        border: 2px solid #2BB0D3;
+        background-color: #fff;
+        color: #2BB0D3;
+        text-transform: uppercase;
+        width: 13em;
+    }
+    .task__wrapper {
+        height: auto;
+    }
+    .task__switcher {
+        display: none;
+    }
+    .task__item {
+        padding: 20px 0;
+        align-items: center;
+    }
+    .task__item-btn {
+        border: none;
+    }
+    .task__item-start {
+        display: none;
+    }
+    .task__item-mobile {
+        display: block;
+    }
+    .task__item-icon {
+        display: none;
+    }
+    .task__item-date {
+        padding-bottom: 1em;
+    }
+}
+
+@media(max-width: 600px) {
+    .card__bar-item {
+        padding: 2em 0px;
+    }
+    .card__bar-icon {
+        width: 50%;
+    }
+    .navbar__link {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 400px) {
+    .card__bar-item {
+        padding: 0em 0px;
+    }
+}
+
+@media(max-width: 320px) {
+    .navbar__link {
+        font-size: 8px;
+    }
+}
