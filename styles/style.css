@@ -1,7 +1,28 @@
+@font-face {
+    font-family: 'Helvetica Neue roman';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff') format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue light';
+    src: url('../fonts/HelveticaNeueCyr-Light.woff') format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue ultralight';
+    src: url('../fonts/HelveticaNeueCyr-UltraLight.woff') format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 h1,
@@ -116,7 +137,8 @@ p {
 }
 
 .logo {
-    display: flex;
+    display: none;
+    /* display: flex; */
     align-items: center;
     margin-top: -6px;
 }
@@ -144,6 +166,10 @@ p {
     padding-top: 3em;
 }
 
+.navbar__tabs .navbar__tab:last-child {
+    /* padding-left: 5px; */
+}
+
 .navbar__tab {
     display: flex;
     align-items: center;
@@ -162,10 +188,11 @@ p {
 
 .navbar__icon {
     padding-right: 1em;
+    width: 18px;
 }
 
 .navbar__icon.icon-active {
-    padding: 0;
+    padding-right: 0;
 }
 
 .navbar__logo {
@@ -175,15 +202,14 @@ p {
 .navbar__link {
     text-decoration: none;
     color: inherit;
-    /* opacity: 1;
-    visibility: visible;
-    transition: all .1s; */
+    line-height: 100%;
+    transition: all .2s;
 }
 
 .navbar__link.link-hidden {
     display: none;
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
 }
 
 .header {
@@ -271,6 +297,7 @@ p {
 }
 
 .card__bar-ip {
+    font-family: 'Helvetica Neue roman';
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -282,6 +309,7 @@ p {
 }
 
 .card__bar-ip span {
+    font-family: 'Helvetica Neue light';
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
@@ -314,6 +342,20 @@ p {
     width: 30%;
     height: 5em;
     justify-content: center;
+    border: 2px solid #E0E0E0;
+    transition: all .2s;
+}
+
+.card__bar-item:hover {
+    border: 2px solid #FF7802;
+}
+
+.card__bar-item:hover .card__bar-text {
+    color: #FF7802;
+}
+
+.card__bar-item:hover .card__bar-icon path {
+    fill: #FF7802;
 }
 
 .card__bar-text {
@@ -334,6 +376,7 @@ p {
 
 .user__card-timer {
     font-weight: normal;
+    font-family: 'Helvetica Neue roman';
     font-size: 25px;
     line-height: 30px;
     color: #71C6F4;
@@ -351,12 +394,17 @@ p {
     height: 47px;
     background: #42ACE6;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    transition: all .2s;
+}
+
+.user__card-button:hover {
+    background: #6FBDE8;
 }
 
 .task__wrapper {
@@ -410,6 +458,10 @@ p {
     color: #757575;
 }
 
+.task__item-icon {
+    margin-top: -2px;
+}
+
 .task__item-mobile {
     display: none;
 }
@@ -432,4 +484,17 @@ p {
     text-decoration: none;
     font-size: 13px;
     line-height: 18px;
+    transition: all .2s;
+}
+
+.task__item-btn:hover {
+    background-color: #42ACE6;
+}
+
+.task__item-btn:hover .task__item-start {
+    color: #fff;
+}
+
+.task__item-btn:hover .task__item-icon path {
+    fill: #fff;
 }

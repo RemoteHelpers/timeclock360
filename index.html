@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <title>Dashboard</title>
@@ -78,10 +81,13 @@
                     <a href="#" class="navbar__link">Who’s working</a>
                 </div>
                 <div class="navbar__tab">
+                    <!-- <div class="navbar__icon-wrap"> -->
                     <svg class="navbar__icon" width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.1775 15.4277H4.7227C4.56933 15.4277 4.43491 15.4888 4.31976 15.61C4.2045 15.7315 4.14697 15.8731 4.14697 16.035V19.6778C4.14697 19.8397 4.2047 19.9814 4.31976 20.1027C4.43491 20.2239 4.56918 20.2849 4.7227 20.2849H8.1775C8.33087 20.2849 8.46564 20.224 8.58034 20.1027C8.6958 19.9814 8.75343 19.8397 8.75343 19.6778V16.035C8.75343 15.8731 8.69595 15.7315 8.58034 15.61C8.46564 15.4885 8.33087 15.4277 8.1775 15.4277Z" fill="#424242"/>
-                        <path d="M12.7122 4.52285C12.3186 3.75851 11.8101 3.11379 11.1862 2.58751C10.5626 2.06144 9.86162 1.64132 9.08447 1.32778C8.30716 1.01435 7.5347 0.857422 6.76682 0.857422C3.84964 0.857422 1.6233 2.20316 0.0877424 4.8947C0.0110554 5.02616 -0.0154144 5.16778 0.00853451 5.3196C0.0326347 5.47122 0.107002 5.59774 0.231739 5.6989L2.59255 7.59623C2.71728 7.67703 2.83728 7.71749 2.95249 7.71749C3.12527 7.71749 3.27391 7.63642 3.39879 7.47454C4.08963 6.56402 4.60315 5.98224 4.93899 5.72915C5.35172 5.43581 5.86977 5.2892 6.49355 5.2892C7.07891 5.2892 7.59459 5.45112 8.041 5.77465C8.48721 6.0985 8.71011 6.47291 8.71011 6.89787C8.71011 7.37322 8.59037 7.75789 8.35037 8.05133C8.11053 8.34467 7.70733 8.62785 7.14103 8.90114C6.39271 9.25524 5.70626 9.80422 5.08278 10.5479C4.45885 11.2917 4.14711 12.0834 4.14711 12.9232V13.6062C4.14711 13.7986 4.19723 13.9882 4.29816 14.1754C4.399 14.3627 4.52127 14.4562 4.66531 14.4562H8.12006C8.27364 14.4562 8.40785 14.378 8.52311 14.2206C8.63801 14.0642 8.69584 13.8998 8.69584 13.728C8.69584 13.4751 8.82779 13.1358 9.09148 12.7111C9.35542 12.2861 9.684 11.9569 10.0778 11.7241C10.4518 11.5016 10.7443 11.3223 10.9556 11.1855C11.1672 11.0491 11.4429 10.8285 11.7836 10.5252C12.1243 10.2215 12.3882 9.92048 12.5751 9.6221C12.7623 9.32366 12.9304 8.93655 13.0791 8.46087C13.2281 7.98536 13.3024 7.47433 13.3024 6.92801C13.3023 6.08819 13.1054 5.28638 12.7122 4.52285Z" fill="#424242"/>
-                        </svg>
+                            <path d="M8.1775 15.4277H4.7227C4.56933 15.4277 4.43491 15.4888 4.31976 15.61C4.2045 15.7315 4.14697 15.8731 4.14697 16.035V19.6778C4.14697 19.8397 4.2047 19.9814 4.31976 20.1027C4.43491 20.2239 4.56918 20.2849 4.7227 20.2849H8.1775C8.33087 20.2849 8.46564 20.224 8.58034 20.1027C8.6958 19.9814 8.75343 19.8397 8.75343 19.6778V16.035C8.75343 15.8731 8.69595 15.7315 8.58034 15.61C8.46564 15.4885 8.33087 15.4277 8.1775 15.4277Z" fill="#424242"/>
+                            <path d="M12.7122 4.52285C12.3186 3.75851 11.8101 3.11379 11.1862 2.58751C10.5626 2.06144 9.86162 1.64132 9.08447 1.32778C8.30716 1.01435 7.5347 0.857422 6.76682 0.857422C3.84964 0.857422 1.6233 2.20316 0.0877424 4.8947C0.0110554 5.02616 -0.0154144 5.16778 0.00853451 5.3196C0.0326347 5.47122 0.107002 5.59774 0.231739 5.6989L2.59255 7.59623C2.71728 7.67703 2.83728 7.71749 2.95249 7.71749C3.12527 7.71749 3.27391 7.63642 3.39879 7.47454C4.08963 6.56402 4.60315 5.98224 4.93899 5.72915C5.35172 5.43581 5.86977 5.2892 6.49355 5.2892C7.07891 5.2892 7.59459 5.45112 8.041 5.77465C8.48721 6.0985 8.71011 6.47291 8.71011 6.89787C8.71011 7.37322 8.59037 7.75789 8.35037 8.05133C8.11053 8.34467 7.70733 8.62785 7.14103 8.90114C6.39271 9.25524 5.70626 9.80422 5.08278 10.5479C4.45885 11.2917 4.14711 12.0834 4.14711 12.9232V13.6062C4.14711 13.7986 4.19723 13.9882 4.29816 14.1754C4.399 14.3627 4.52127 14.4562 4.66531 14.4562H8.12006C8.27364 14.4562 8.40785 14.378 8.52311 14.2206C8.63801 14.0642 8.69584 13.8998 8.69584 13.728C8.69584 13.4751 8.82779 13.1358 9.09148 12.7111C9.35542 12.2861 9.684 11.9569 10.0778 11.7241C10.4518 11.5016 10.7443 11.3223 10.9556 11.1855C11.1672 11.0491 11.4429 10.8285 11.7836 10.5252C12.1243 10.2215 12.3882 9.92048 12.5751 9.6221C12.7623 9.32366 12.9304 8.93655 13.0791 8.46087C13.2281 7.98536 13.3024 7.47433 13.3024 6.92801C13.3023 6.08819 13.1054 5.28638 12.7122 4.52285Z" fill="#424242"/>
+                            </svg>
+                    <!-- </div> -->
+
                     <a href="#" class="navbar__link">Support</a>
                 </div>
             </div>
@@ -193,8 +199,14 @@
                                         <span class="task__item-start">
                                             Start
                                         </span>
-                                        <img src="images/start.svg" alt="" class="task__item-icon">
-                                        <img src="images/start-mobile.svg" alt="" class="task__item-mobile">
+                                        <svg class="task__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.15425 3.90004L5.37823 3.43155L5.39594 4.33785L5.51306 10.3324L5.52961 11.1791L6.26297 10.7557L11.2787 7.85981L12.0121 7.4364L11.2871 6.99875L6.15425 3.90004Z" stroke="#42ACE6"/>
+                                            </svg>
+
+                                        <svg class="task__item-mobile" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.5 1C11.9899 1 1 11.9909 1 25.5C1 39.0091 11.9899 50 25.5 50C39.0101 50 50 39.0091 50 25.5C50 11.9909 39.0101 1 25.5 1ZM25.5 47.9584C13.1164 47.9584 3.04163 37.8836 3.04163 25.5C3.04163 13.1164 13.1164 3.04163 25.5 3.04163C37.8836 3.04163 47.9584 13.1164 47.9584 25.5C47.9584 37.8836 37.8836 47.9584 25.5 47.9584Z" fill="#2BB0D3" stroke="#2BB0D3"/>
+                                            <path d="M37.6492 24.2071L19.9801 13.4407C19.5931 13.2012 19.0927 13.1883 18.6934 13.3962C18.2866 13.6065 18.0352 14.0085 18.0352 14.4465V35.9795C18.0352 36.4175 18.2866 36.8195 18.6934 37.0298C18.8807 37.1268 19.0902 37.1758 19.2973 37.1758C19.5339 37.1758 19.773 37.1126 19.9801 36.9853L37.6492 26.2189C38.0091 25.9993 38.2285 25.6196 38.2285 25.213C38.2285 24.8065 38.0091 24.4268 37.6492 24.2071ZM20.5593 33.7878V16.6382L34.6321 25.213L20.5593 33.7878Z" fill="#2BB0D3"/>
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
@@ -212,8 +224,14 @@
                                         <span class="task__item-start">
                                             Start
                                         </span>
-                                        <img src="images/start.svg" alt="" class="task__item-icon">
-                                        <img src="images/start-mobile.svg" alt="" class="task__item-mobile">
+                                        <svg class="task__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.15425 3.90004L5.37823 3.43155L5.39594 4.33785L5.51306 10.3324L5.52961 11.1791L6.26297 10.7557L11.2787 7.85981L12.0121 7.4364L11.2871 6.99875L6.15425 3.90004Z" stroke="#42ACE6"/>
+                                        </svg>
+                                        <svg class="task__item-mobile" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.5 1C11.9899 1 1 11.9909 1 25.5C1 39.0091 11.9899 50 25.5 50C39.0101 50 50 39.0091 50 25.5C50 11.9909 39.0101 1 25.5 1ZM25.5 47.9584C13.1164 47.9584 3.04163 37.8836 3.04163 25.5C3.04163 13.1164 13.1164 3.04163 25.5 3.04163C37.8836 3.04163 47.9584 13.1164 47.9584 25.5C47.9584 37.8836 37.8836 47.9584 25.5 47.9584Z" fill="#2BB0D3" stroke="#2BB0D3"/>
+                                            <path d="M37.6492 24.2071L19.9801 13.4407C19.5931 13.2012 19.0927 13.1883 18.6934 13.3962C18.2866 13.6065 18.0352 14.0085 18.0352 14.4465V35.9795C18.0352 36.4175 18.2866 36.8195 18.6934 37.0298C18.8807 37.1268 19.0902 37.1758 19.2973 37.1758C19.5339 37.1758 19.773 37.1126 19.9801 36.9853L37.6492 26.2189C38.0091 25.9993 38.2285 25.6196 38.2285 25.213C38.2285 24.8065 38.0091 24.4268 37.6492 24.2071ZM20.5593 33.7878V16.6382L34.6321 25.213L20.5593 33.7878Z" fill="#2BB0D3"/>
+                                        </svg>
+
                                     </a>
                                 </div>
                             </div>
@@ -231,8 +249,13 @@
                                         <span class="task__item-start">
                                             Start
                                         </span>
-                                        <img src="images/start.svg" alt="" class="task__item-icon">
-                                        <img src="images/start-mobile.svg" alt="" class="task__item-mobile">
+                                        <svg class="task__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.15425 3.90004L5.37823 3.43155L5.39594 4.33785L5.51306 10.3324L5.52961 11.1791L6.26297 10.7557L11.2787 7.85981L12.0121 7.4364L11.2871 6.99875L6.15425 3.90004Z" stroke="#42ACE6"/>
+                                            </svg>
+                                        <svg class="task__item-mobile" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M25.5 1C11.9899 1 1 11.9909 1 25.5C1 39.0091 11.9899 50 25.5 50C39.0101 50 50 39.0091 50 25.5C50 11.9909 39.0101 1 25.5 1ZM25.5 47.9584C13.1164 47.9584 3.04163 37.8836 3.04163 25.5C3.04163 13.1164 13.1164 3.04163 25.5 3.04163C37.8836 3.04163 47.9584 13.1164 47.9584 25.5C47.9584 37.8836 37.8836 47.9584 25.5 47.9584Z" fill="#2BB0D3" stroke="#2BB0D3"/>
+                                                <path d="M37.6492 24.2071L19.9801 13.4407C19.5931 13.2012 19.0927 13.1883 18.6934 13.3962C18.2866 13.6065 18.0352 14.0085 18.0352 14.4465V35.9795C18.0352 36.4175 18.2866 36.8195 18.6934 37.0298C18.8807 37.1268 19.0902 37.1758 19.2973 37.1758C19.5339 37.1758 19.773 37.1126 19.9801 36.9853L37.6492 26.2189C38.0091 25.9993 38.2285 25.6196 38.2285 25.213C38.2285 24.8065 38.0091 24.4268 37.6492 24.2071ZM20.5593 33.7878V16.6382L34.6321 25.213L20.5593 33.7878Z" fill="#2BB0D3"/>
+                                            </svg>
                                     </a>
                                 </div>
                             </div>
@@ -250,8 +273,13 @@
                                         <span class="task__item-start">
                                             Start
                                         </span>
-                                        <img src="images/start.svg" alt="" class="task__item-icon">
-                                        <img src="images/start-mobile.svg" alt="" class="task__item-mobile">
+                                        <svg class="task__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.15425 3.90004L5.37823 3.43155L5.39594 4.33785L5.51306 10.3324L5.52961 11.1791L6.26297 10.7557L11.2787 7.85981L12.0121 7.4364L11.2871 6.99875L6.15425 3.90004Z" stroke="#42ACE6"/>
+                                            </svg>
+                                        <svg class="task__item-mobile" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M25.5 1C11.9899 1 1 11.9909 1 25.5C1 39.0091 11.9899 50 25.5 50C39.0101 50 50 39.0091 50 25.5C50 11.9909 39.0101 1 25.5 1ZM25.5 47.9584C13.1164 47.9584 3.04163 37.8836 3.04163 25.5C3.04163 13.1164 13.1164 3.04163 25.5 3.04163C37.8836 3.04163 47.9584 13.1164 47.9584 25.5C47.9584 37.8836 37.8836 47.9584 25.5 47.9584Z" fill="#2BB0D3" stroke="#2BB0D3"/>
+                                                <path d="M37.6492 24.2071L19.9801 13.4407C19.5931 13.2012 19.0927 13.1883 18.6934 13.3962C18.2866 13.6065 18.0352 14.0085 18.0352 14.4465V35.9795C18.0352 36.4175 18.2866 36.8195 18.6934 37.0298C18.8807 37.1268 19.0902 37.1758 19.2973 37.1758C19.5339 37.1758 19.773 37.1126 19.9801 36.9853L37.6492 26.2189C38.0091 25.9993 38.2285 25.6196 38.2285 25.213C38.2285 24.8065 38.0091 24.4268 37.6492 24.2071ZM20.5593 33.7878V16.6382L34.6321 25.213L20.5593 33.7878Z" fill="#2BB0D3"/>
+                                            </svg>
                                     </a>
                                 </div>
                             </div>
@@ -266,32 +294,52 @@
 
 <script>
     let headerButton = document.querySelector('.header__button')
+    let main = document.querySelector('.main')
+    let navBarLink = document.querySelectorAll('.navbar__link')
+    let navbarTop = document.querySelector('.navbar__top')
+    let logoText = document.querySelector('.logo__text')
+    let navbarIcon = document.querySelectorAll('.navbar__icon')
 
     headerButton.addEventListener('click', navBarSlide)
 
+
+
     function navBarSlide() {
-        let main = document.querySelector('.main')
-        let navBarLink = document.querySelectorAll('.navbar__link')
-        let navbarTop = document.querySelector('.navbar__top')
-        let logoText = document.querySelector('.logo__text')
-        let navbarIcon = document.querySelectorAll('.navbar__icon')
+        headerButton.classList.add('active')
+        let buttonFunction = new Promise((resolve, reject) => {
+            navBarLink.forEach(link => {
+                link.classList.add('link-hidden')
+            })
+            resolve()
+        }).then(() => {
+            setTimeout(() => {
+                navbarIcon.forEach(icon => {
+                    icon.classList.toggle('icon-active')
+                })
 
-        navBarLink.forEach(link => {
-            link.classList.toggle('link-hidden')
+                navbarTop.classList.toggle('navbar-small')
+                logoText.classList.toggle('text-hidden')
+
+                if (main.classList.contains('small-navbar')) {
+                    main.classList.remove('small-navbar')
+                } else {
+                    main.classList.add('small-navbar')
+                }
+            }, 100);
         })
 
-        navbarIcon.forEach(icon => {
-            icon.classList.toggle('icon-active')
-        })
 
-        navbarTop.classList.toggle('navbar-small')
-        logoText.classList.toggle('text-hidden')
-
-        if (main.classList.contains('small-navbar')) {
-            main.classList.remove('small-navbar')
-        } else {
-            main.classList.add('small-navbar')
+        if (headerButton.classList.contains('active')) {
+            headerButton.addEventListener('click', () => {
+                setTimeout(() => {
+                    navBarLink.forEach(link => {
+                        link.classList.toggle('link-hidden')
+                    })
+                }, 300);
+            })
         }
+
+
     }
 </script>
 
